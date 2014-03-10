@@ -6,7 +6,7 @@
     <artifactId>aws-java-sdk</artifactId>
     <packaging>jar</packaging>
     <name>AWS SDK for Java</name>
-    <version>1.7.1</version>
+    <version>1.7.1-MELTMEDIA-1-SNAPSHOT</version>
     <description>The Amazon Web Services SDK for Java provides Java APIs for building software on AWS’ cost-effective, scalable, and reliable infrastructure products. The AWS Java SDK allows developers to code against APIs for all of Amazon's infrastructure web services (Amazon S3, Amazon EC2, Amazon SQS, Amazon Relational Database Service, Amazon AutoScaling, etc).</description>
     <url>https://aws.amazon.com/sdkforjava</url>
 
@@ -21,6 +21,19 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <distributionManagement>
+      <repository>
+        <id>meltmedia-releases</id>
+        <name>Meltmedia Release Repository [m2]</name>
+        <url>http://nexus.meltmedia.com/content/repositories/thirdparty</url>
+      </repository>
+      <snapshotRepository>
+        <id>meltmedia-snapshots</id>
+        <name>Meltmedia Snapshot Repository [m2]</name>
+        <url>http://nexus.meltdev.com/content/repositories/snapshots</url>
+      </snapshotRepository>
+    </distributionManagement>
 
     <properties>
         <jackson.version>2.1.1</jackson.version>

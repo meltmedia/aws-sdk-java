@@ -7,6 +7,15 @@ The **AWS SDK for Java** enables Java developers to easily work with [Amazon Web
 * [Forum][sdk-forum]
 * [Issues][sdk-issues]
 
+# Fork Information
+
+This for of the AWS SDK makes modifications to the Flow Framework, so that we can interoperate with non JVM activities.  Specifically, it removes class name based descriminators
+from the message payloads.  You should not develop code in this branch, as it contains changes to the POM that are not intended for patches sent upstream.
+
+## Deployment
+
+The pom of this project has been modified to point at meltmedia's 3rd party nexes repository.  Use a standard deployment procedure to upload snapshots and create releases.
+
 ## Features
 
 * Provides easy-to-use HTTP clients for all supported AWS services, regions, and authentication protocols.
